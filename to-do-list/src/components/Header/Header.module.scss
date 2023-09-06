@@ -16,14 +16,14 @@
     align-items: center;
     justify-content: center;
 
-    a {
+    .link {
       text-decoration: none;
       padding: 10px;
       color: #fff;
+    }
 
-      &.active {
-        color: #ffffff33;
-      }
+    .active {
+      color: #ffffff33;
     }
 
   }
