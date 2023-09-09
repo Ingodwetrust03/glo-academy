@@ -8,8 +8,8 @@ return isActive ?  `${classes.link} ${classes.active}` : `${classes.link}`
     return (
         <header className={classes.header}>
             <div className={classes.container}>
-                <NavLink to="/" className={getActiveLink}>Home</NavLink>
-                <NavLink to="/todo" className={getActiveLink}>ToDo</NavLink>
+                <NavLink to="/" className={getActiveLink}>ToDo</NavLink>
+                <NavLink to="/list" className={getActiveLink}>List</NavLink>
             </div>
         </header>
     )
