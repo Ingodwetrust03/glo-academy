@@ -1,10 +1,11 @@
-import classes from './Form.module.scss'
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../store";
 import {clearValueAction, getValueAction} from "../../feature/form";
 import {createAction} from "../../feature/todoList";
 import {toast} from "react-toastify";
+import {FormWrapper, FormBlock, FormField, FormLabel, FormControl} from "./Form.styled"
+import plusIcon from "../../assets/images/plus.png"
 
 export const Form = () => {
     const formValue = useSelector((state: RootState) => state.form.text)
@@ -20,13 +21,13 @@ export const Form = () => {
         }
     }
     return (
-        <div className={classes.wrapper}>
-            <form action="#" onSubmit={formSubmit}>
-                <label>
-                    <input value={formValue} type="text" onChange={(e:React.FormEvent<HTMLInputElement>) => dispatch(getValueAction(e.target)) }/>
-                    <button></button>
-                </label>
-            </form>
-        </div>
+        <FormWrapper>
+            <FormBlock action="#" onSubmit={formSubmit}>
+                <FormLabel>
+                    <FormField value={formValue} type="text" onChange={(e:React.FormEvent<HTMLInputElement>) => dispatch(getValueAction(e.target)) }/>
+                    <FormControl icon={plusIcon}/>
+                </FormLabel>
+            </FormBlock>
+        </FormWrapper>
     )
 }
