@@ -34,12 +34,6 @@ export const NotFoundSection = styled.section`
     padding:0;
 `
 
-export const NotFoundContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-`
 
 export const NotFoundLink = styled(Link)`
      text-align:center;
@@ -48,7 +42,6 @@ export const NotFoundLink = styled(Link)`
     margin-bottom:-40px;
     position:relative;
     color:#fff;
-    text-decoration:none;
 `
 
 export const NotFoundCirclesContainer = styled.div`
