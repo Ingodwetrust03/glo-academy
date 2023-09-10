@@ -2,6 +2,7 @@ import styled, {keyframes} from "styled-components";
 import {Link} from "react-router-dom";
 
 
+
 const smallMove = keyframes`
   0% { top: 10px; left: 45%; opacity: 1; }
     25% { top: 300px; left: 40%; opacity:0.7; }
@@ -26,7 +27,7 @@ const bigMove = keyframes`
 
 export const NotFoundSection = styled.section`
     width:100%;
-    height:100%;
+    height:100vh;
     background:#48A9E6;
     font-family: 'Raleway', sans-serif;
     font-weight:300;
@@ -36,12 +37,14 @@ export const NotFoundSection = styled.section`
 
 
 export const NotFoundLink = styled(Link)`
+     display: flex;
+     width: 100%;
      text-align:center;
-    font-size:40px;
-    margin-top:40px;
-    margin-bottom:-40px;
-    position:relative;
-    color:#fff;
+     font-size:40px;
+     padding-top:40px;
+     margin-bottom:-40px;
+     position:relative;
+     color:#fff;
 `
 
 export const NotFoundCirclesContainer = styled.div`
@@ -51,7 +54,7 @@ export const NotFoundCirclesContainer = styled.div`
     margin-top:-60px;
     box-shadow:inset -1px -4px 4px rgba(0,0,0,0.2);
     
-    :after {
+    &:after {
         content:'';
         display:inline-block;
         width:100%;

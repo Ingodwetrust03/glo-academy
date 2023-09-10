@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle<{theme: Theme}>`
           line-height: 1.429;
           color: black;
           transition: all .3s;
+          margin: 0;
         }
         
         .container {
