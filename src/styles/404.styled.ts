@@ -38,13 +38,14 @@ export const NotFoundSection = styled.section`
 
 export const NotFoundLink = styled(Link)`
      display: flex;
+     position:relative;
+     justify-content: center;
      width: 100%;
-     text-align:center;
      font-size:40px;
      padding-top:40px;
      margin-bottom:-40px;
-     position:relative;
      color:#fff;
+     text-decoration: none;
 `
 
 export const NotFoundCirclesContainer = styled.div`
