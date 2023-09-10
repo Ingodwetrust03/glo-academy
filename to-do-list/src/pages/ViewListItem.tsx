@@ -17,7 +17,7 @@ export const ViewListItem = () => {
         if (searchTodo) {
             setTodo(searchTodo)
         } else {
-            navigate('/404')
+            navigate('/glo-academy/404')
         }
     }, [todoList, id, navigate])
 
