@@ -52,6 +52,7 @@ export const SwitchThemeField = styled.input`
         margin-top: 0.15em; 
         appearance: none;
         transition: all 0.15s;
+        cursor: pointer;
         
         &:checked {
             background: #0d6efd url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") right center no-repeat;
