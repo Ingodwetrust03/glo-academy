@@ -1,4 +1,4 @@
-import {ToDo} from "../components/models/todo-item";
+import {ToDo} from "../models/todo-item";
 import {ListItem} from "../components/ListItem/Listitem";
 import {useSelector} from "react-redux";
 import {RootState} from "../store";

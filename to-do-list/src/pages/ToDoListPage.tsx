@@ -1,6 +1,6 @@
 import {Form} from "../components/Form/Form";
 import {ToDoList} from "../components/ToDoList/ToDoList";
-import {ToDo} from "../components/models/todo-item";
+import {ToDo} from "../models/todo-item";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {useDispatch, useSelector} from "react-redux";

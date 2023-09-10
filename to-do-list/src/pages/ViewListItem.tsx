@@ -1,4 +1,4 @@
-import {ToDo} from "../components/models/todo-item";
+import {ToDo} from "../models/todo-item";
 import {useEffect, useState} from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
@@ -17,7 +17,7 @@ export const ViewListItem = () => {
         if (searchTodo) {
             setTodo(searchTodo)
         } else {
-            navigate('/glo-academy/404')
+            navigate('/404')
         }
     }, [todoList, id, navigate])
 

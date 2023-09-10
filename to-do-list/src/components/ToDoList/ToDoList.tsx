@@ -1,6 +1,7 @@
 import {ToDoListItem} from "./ToDoListItem/ToDoListItem";
-import {ToDo} from "../models/todo-item";
+import {ToDo} from "../../models/todo-item";
 import {ToDoListBlock, ToDoListContainer} from "./ToDoList.styled";
+
 
 export const ToDoList = (props: {todos: ToDo[], updateToDo: Function, deleteToDo: Function}) => {
 
@@ -8,11 +9,11 @@ export const ToDoList = (props: {todos: ToDo[], updateToDo: Function, deleteToDo
     const checkedList: Function = () => {
        return props.todos
             .filter((elem) => !elem.isDone)
-            .map((item, index) => {
+            .map((item) => {
                 return (
                     <ToDoListItem
                         ToDoItem={item}
-                        key={index}
+                        key={item.id}
                         updateToDo={props.updateToDo}
                         deleteToDo={props.deleteToDo}/>
                 )
@@ -22,11 +23,11 @@ export const ToDoList = (props: {todos: ToDo[], updateToDo: Function, deleteToDo
     const unCheckedList: Function = () => {
         return props.todos
             .filter((elem) => elem.isDone)
-            .map((item, index) => {
+            .map((item) => {
                 return (
                     <ToDoListItem
                         ToDoItem={item}
-                        key={index}
+                        key={item.id}
                         updateToDo={props.updateToDo}
                         deleteToDo={props.deleteToDo}/>
                 )

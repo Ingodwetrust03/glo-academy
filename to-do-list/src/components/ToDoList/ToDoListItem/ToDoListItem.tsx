@@ -1,4 +1,4 @@
-import {ToDo} from "../../models/todo-item";
+import {ToDo} from "../../../models/todo-item";
 import {ToDoItem, ToDoItemControl, ToDoItemControls, ToDoItemText} from "./ToDoListItem.styled";
 import checkIcon from "../../../assets/images/check.png"
 import uncheckIcon from "../../../assets/images/uncheck.png"
