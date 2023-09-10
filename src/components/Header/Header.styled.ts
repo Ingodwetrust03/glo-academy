@@ -39,7 +39,8 @@ export const SwitchThemeBlock = styled.div`
         align-items: center;
         padding: 2em 1.5em;
         height: 100%;
-        gap: 10px
+        gap: 10px;
+        cursor: pointer;
     `
 
 export const SwitchThemeField = styled.input`
