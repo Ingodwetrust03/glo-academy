@@ -1,10 +1,27 @@
-import {Link} from "react-router-dom";
+import {
+    NotFoundCircleBig,
+    NotFoundCircleMedium,
+    NotFoundCirclesContainer, NotFoundCircleSmall, NotFoundCirclesSmallText,
+    NotFoundCirclesText,
+    NotFoundContainer,
+    NotFoundLink,
+    NotFoundSection
+} from "../styles/404.styled";
 
 export const NotFound = () => {
     return (
-        <div className="container">
-            <h1>Not Found</h1>
-            <Link to="/">На главную</Link>
-        </div>
+        <NotFoundSection>
+            <NotFoundContainer>
+                <NotFoundLink to="/">На главную</NotFoundLink>
+            </NotFoundContainer>
+            <NotFoundCirclesContainer>
+                <NotFoundCirclesText>404<br />
+                    <NotFoundCirclesSmallText>PAGE NOT FOUND</NotFoundCirclesSmallText>
+                </NotFoundCirclesText>
+                <NotFoundCircleSmall />
+                <NotFoundCircleMedium />
+                <NotFoundCircleBig />
+            </NotFoundCirclesContainer>
+        </NotFoundSection>
     )
 }
