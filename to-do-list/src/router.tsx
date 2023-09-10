@@ -23,4 +23,4 @@ export const router = createBrowserRouter([
         path: '*',
         element: <NotFound />
     }
-])
+], {basename:'/glo-academy'})
