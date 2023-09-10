@@ -6,16 +6,12 @@ import {
     NotFoundLink,
     NotFoundSection
 } from "../styles/404.styled";
-import {GlobalStyle} from "../styles/GlobalStyle";
 import React from "react";
-import {useSelector} from "react-redux";
-import {RootState} from "../store";
+
 
 export const NotFound = () => {
-    const theme = useSelector((state: RootState) => state.theme.theme)
     return (
         <>
-            <GlobalStyle theme={theme} />
             <NotFoundSection>
                 <NotFoundLink to="/">На главную</NotFoundLink>
 

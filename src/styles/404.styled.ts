@@ -26,12 +26,12 @@ const bigMove = keyframes`
 `
 
 export const NotFoundSection = styled.section`
-    width:100%;
+    width: calc(100% + 16px);
     height:100vh;
     background:#48A9E6;
     font-family: 'Raleway', sans-serif;
     font-weight:300;
-    margin:0;
+    margin: -8px;
     padding:0;
 `
 
