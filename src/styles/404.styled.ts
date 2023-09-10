@@ -93,7 +93,7 @@ export const NotFoundCircleSmall = styled.span`
     top: 80px;
     left: 50%;
     animation: ${smallMove} 7s  infinite cubic-bezier(1,.22,.71,.98);
-    animation-delay: 1.2s;
+    animation-delay: 0.4s;
 `
 
 export const NotFoundCircleMedium = styled.span`
@@ -106,7 +106,7 @@ export const NotFoundCircleMedium = styled.span`
     top: 0;
     left: 10%;
     animation: ${medMove} 7s infinite cubic-bezier(.32,.04,.15,.75);
-    animation-delay: 0.4s;
+
 `
 
 export const NotFoundCircleBig = styled.span`
@@ -119,6 +119,6 @@ export const NotFoundCircleBig = styled.span`
     top: 200px;
     right: 0;
     animation: ${bigMove} 8s infinite;
-    animation-delay: 3s;
+    animation-delay: 1s;
 `
 

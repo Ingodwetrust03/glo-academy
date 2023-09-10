@@ -19,10 +19,12 @@ export const NotFound = () => {
                     <NotFoundCirclesText>404<br />
                         <NotFoundCirclesSmallText>PAGE NOT FOUND</NotFoundCirclesSmallText>
                     </NotFoundCirclesText>
+
                     <NotFoundCircleSmall />
                     <NotFoundCircleMedium />
                     <NotFoundCircleBig />
                 </NotFoundCirclesContainer>
+
             </NotFoundSection>
         </>
     )
