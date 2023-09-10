@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/glo-academy/static/css/main.98ec47ca.css",
-    "main.js": "/glo-academy/static/js/main.58d2575f.js",
+    "main.js": "/glo-academy/static/js/main.aee8b4ea.js",
     "index.html": "/glo-academy/index.html",
     "main.98ec47ca.css.map": "/glo-academy/static/css/main.98ec47ca.css.map",
-    "main.58d2575f.js.map": "/glo-academy/static/js/main.58d2575f.js.map"
+    "main.aee8b4ea.js.map": "/glo-academy/static/js/main.aee8b4ea.js.map"
   },
   "entrypoints": [
     "static/css/main.98ec47ca.css",
-    "static/js/main.58d2575f.js"
+    "static/js/main.aee8b4ea.js"
   ]
 }
